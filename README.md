@@ -26,7 +26,11 @@ This project delivers an end-to-end Exploratory Data Analysis (EDA) on multi-yea
 ---
 
 ## 📈 Dashboard Preview
-![Dashboard Preview](docs/dashboard_overview.png)
+<img width="815" height="122" alt="Screenshot 2026-08-26 at 1 32 34 AM" src="https://github.com/user-attachments/assets/f946c63f-19c0-4bf6-9b13-d7e16a5bbd1c" />
+<img width="817" height="253" alt="Screenshot 2026-08-26 at 1 32 44 AM" src="https://github.com/user-attachments/assets/0d84fcf8-37eb-42cb-a1e1-cd5be7afe6de" />
+<img width="603" height="374" alt="Screenshot 2026-08-26 at 1 32 53 AM" src="https://github.com/user-attachments/assets/21175865-c61b-4685-a680-2dc3355abe94" />
+<img width="709" height="239" alt="Screenshot 2026-08-26 at 1 33 00 AM" src="https://github.com/user-attachments/assets/1a08e149-4cab-4187-a34b-cc33ce910e14" />
+
 
 ---
 
