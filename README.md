@@ -41,6 +41,35 @@ This project delivers an end-to-end Exploratory Data Analysis (EDA) on multi-yea
 
 ---
 
+## 📈 Year-over-Year (YoY) Market Dynamics
+
+* **Long-Term Growth Drivers**: Category **R03** (Respiratory) showed sustained multi-year volume expansion, growing **+116.5%** between 2014 (1,277 units) and 2018 (2,765 units). **R06** (Antihistamines) expanded steadily with an overall growth of **+44.5%**.
+* **2017 Market-Wide Contraction**: Total sales volume dropped by **-35.3% YoY in 2017** across all eight therapeutic categories before recovering with a **+39.6% rebound in 2018**.
+* **Pattern Consistency**: Seasonal peak periods (Q4 winter surge for analgesics/respiratory and Q2 spring surge for antihistamines) remained stable year-over-year regardless of macroeconomic volume shifts.
+
+---
+
+## 📋 Prioritized Decision Matrix
+
+| Category | Volume Share (%) | Seasonality (CV %) | Peak Period | Demand Pattern | Business Priority | Recommended Operational Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **N02BE** | 49.4% | 25.0% | Oct–Dec | High-Volume Surge | **Tier 1 (Critical)** | Pre-season buffer build starting in Sep; dynamic reorder points |
+| **N05B** | 14.5% | 7.7% | Stable | High-Volume Baseline | **Tier 2 (High)** | Continuous replenishment; fixed safety stock to control holding costs |
+| **R03** | 9.3% | 27.9% | Dec–Jan | Winter Respiratory Spike | **Tier 2 (High)** | Procurement ramp in Q3; track supplier lead times ahead of winter |
+| **R06** | 4.8% | 48.0% | Apr–May | Spring Allergy Surge | **Tier 2 (High Seasonality)** | Strategic Q1 pre-orders before April peak; summer destocking |
+| **M01AB** | 8.3% | 8.2% | Stable | Steady Demand | **Tier 3 (Medium)** | Standard periodic inventory review; steady baseline sourcing |
+| **M01AE / N02BA** | ~6.4% each | < 7.0% | Stable | Steady Demand | **Tier 3 (Medium)** | Standard periodic review; lean baseline inventory |
+| **N05C** | 1.0% | 13.7% | Jan | Low-Volume Niche | **Tier 4 (Low)** | Lean min-max ordering to avoid product expiration |
+
+---
+
+## ⚠️ Limitations
+
+* **Absence of Operational & Supply Data**: Actual warehouse inventory levels, replenishment cycle times, supplier lead times, and historical stockout logs were unavailable; recommendations serve as planning guidelines rather than calculated Economic Order Quantities ($EOQ$).
+* **Unmodelled Demand Drivers**: The dataset reflects aggregate sales volumes without external covariates such as epidemiological trends (flu season severity), meteorological data, regulatory changes, or marketing/pricing promotions.
+* **Correlation vs. Causality**: The analysis establishes recurring historical seasonality and volume trends but does not isolate causal drivers behind structural demand shocks (such as the 2017 volume drop).
+* **Financial & Capital Quantification**: Quantifying exact carrying cost savings and stockout reduction percentages requires integration with unit pricing, COGS, and inventory holding cost ledgers.
+
 ## 📁 Repository Structure
 - `data/`: Raw transaction dataset (`salesmonthly.csv`).
 - `docs/`: Visual assets and dashboard screenshots.
